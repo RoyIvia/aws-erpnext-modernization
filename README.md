@@ -413,8 +413,3 @@ Production customer records, credentials, secrets, confidential financial data, 
 
 
 
-## Project Status
-
-**Current phase: Architecture and project foundation.**
-
-The architecture represents the intended target design. Individual services will be documented as implemented only after deployment and validation.
