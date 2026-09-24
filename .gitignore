@@ -1,0 +1,54 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials
+secrets/
+*.tfstate
+*.tfstate.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# macOS and editors
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+.cache/
+
+# Database and application backups
+*.sql
+*.sql.gz
+*.dump
+*.bak
+*.tar.gz
+
+# Real migration exports and processed data
+migration/raw-data/
+migration/processed-data/
+migration/rejected-data/
+migration/reports/private/
+
+# ERPNext persistent application data
+sites/
+mariadb-data/
+redis-data/
+
+# Generated deployment artifacts
+deployment/generated/
