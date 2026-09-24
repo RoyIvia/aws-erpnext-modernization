@@ -5,7 +5,7 @@ A production-oriented AWS architecture and implementation project demonstrating 
 
 The project covers the architecture, deployment, validation, and operational considerations involved in transitioning from an on-premises ERP environment to an AWS-hosted ERPNext platform.
 
----
+
 
 ## 1. Project Overview
 
@@ -30,7 +30,7 @@ The implementation also demonstrates a structured migration workflow for transfe
 
 The initial architecture uses a single EC2 instance in accordance with the project's deployment requirements, with a documented recovery strategy and a defined path toward a distributed, highly available architecture.
 
----
+
 
 ## 2. Solution Architecture
 
@@ -64,7 +64,7 @@ The solution is designed around the following principles:
 6. Documented architectural trade-offs.
 7. A clear evolution path toward independent scaling and high availability.
 
----
+
 
 ## 3. AWS Infrastructure
 
@@ -101,7 +101,7 @@ The solution is designed around the following principles:
 
 The EC2 instance hosts the application and its supporting services within a single compute environment.
 
----
+
 
 ## 4. Application Architecture
 
@@ -122,7 +122,7 @@ Persistent data is maintained on EBS-backed storage to preserve database records
 
 Internal database and Redis ports are restricted from public internet access.
 
----
+
 
 ## 5. Database Architecture Decision
 
@@ -154,7 +154,7 @@ As workload requirements increase, MariaDB can be migrated to Amazon RDS to prov
 
 The initial database decision is specific to the project requirements and does not represent a general preference for self-managed databases over managed database services.
 
----
+
 
 ## 6. Network Architecture and Security
 
@@ -190,7 +190,7 @@ The implementation includes:
 
 MariaDB, Redis, and internal application ports must remain inaccessible from the public internet.
 
----
+
 
 ## 7. Legacy ERP Data Migration
 
@@ -199,7 +199,7 @@ The project demonstrates a structured migration from a simulated legacy ERP envi
 Synthetic HANSAWorld-style data is used to demonstrate the migration workflow without exposing client information.
 
 ### Migration Workflow
-
+```
 Legacy ERP Export
 
 ↓
@@ -233,7 +233,7 @@ ERPNext Data Import / Frappe API
 ↓
 
 ERPNext MariaDB
-
+```
 ### Migration Activities
 
 The implementation covers:
@@ -253,7 +253,7 @@ Direct database inserts will be avoided where they bypass ERPNext application va
 
 Temporary migration staging data will be removed or retained according to the agreed migration retention policy.
 
----
+
 
 ## 8. Amazon QuickSight Integration
 
@@ -265,7 +265,7 @@ SPICE will be evaluated to cache analytical datasets and reduce repeated reporti
 
 The reporting architecture will prioritize controlled access to business data and minimize the impact of analytical workloads on transactional ERP operations.
 
----
+
 
 ## 9. Observability and Operations
 
@@ -283,7 +283,7 @@ Monitoring will cover:
 
 The implementation will document monitoring configuration, alarm thresholds, and operational response procedures.
 
----
+
 
 ## 10. Backup, Recovery and Availability
 
@@ -311,7 +311,7 @@ Recovery Time Objective (RTO) and Recovery Point Objective (RPO) will be defined
 
 Backup completion alone will not be treated as evidence of successful recoverability.
 
----
+
 
 ## 11. Scalability and Architecture Evolution
 
@@ -337,7 +337,7 @@ Evaluate an appropriate Amazon RDS Multi-AZ deployment to support managed databa
 
 The transition between phases will be driven by measured utilization, operational requirements, and agreed availability objectives.
 
----
+
 
 ## 12. Cost and Resource Optimization
 
@@ -351,7 +351,7 @@ Temporary migration resources will be reviewed and removed when no longer requir
 
 Infrastructure cost estimates are documented separately from the architecture and implementation evidence.
 
----
+
 
 ## 13. Repository Structure
 
@@ -383,7 +383,7 @@ aws-erpnext-modernization/
 └── evidence/
 ```
 
----
+
 
 ## 14. Implementation Roadmap
 
@@ -401,7 +401,7 @@ aws-erpnext-modernization/
 
 Implementation results, technical decisions, configuration changes, and validation evidence will be documented as the project progresses.
 
----
+
 
 ## 15. Project Data and Confidentiality
 
@@ -411,7 +411,7 @@ The implementation uses synthetic data and sanitized technical evidence.
 
 Production customer records, credentials, secrets, confidential financial data, private infrastructure identifiers, and database backups must remain outside the public repository.
 
----
+
 
 ## Project Status
 
