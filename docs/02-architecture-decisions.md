@@ -6,7 +6,9 @@
 
 The region is selected for the proposed ERP workload and will be used consistently across infrastructure, storage, monitoring, and supporting services.
 
+
 ## ADR-002: Single-Instance ERPNext Deployment
+
 
 **Decision:** Deploy the initial ERPNext environment on one Amazon EC2 t3.large instance.
 
