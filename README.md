@@ -351,7 +351,6 @@ Temporary migration resources will be reviewed and removed when no longer requir
 Infrastructure cost estimates are documented separately from the architecture and implementation evidence.
 
 
-
 ## 13. Repository Structure
 
 ```text
