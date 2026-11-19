@@ -6,8 +6,6 @@ A production-oriented AWS architecture and implementation project demonstrating 
 
 The project covers the architecture, deployment, validation, and operational considerations involved in transitioning from an on-premises ERP environment to an AWS-hosted ERPNext platform.
 
-
-
 ## 1. Project Overview
 
 Enterprise ERP modernization involves more than deploying an application in the cloud. It requires careful consideration of infrastructure architecture, data integrity, application dependencies, security, availability, operational management, and long-term scalability.
